@@ -1,0 +1,182 @@
+        /*图标区域*/
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .whole {
+            position: relative;
+        }
+        /*#preloader {
+            background-image: url(images/bg1.jpg), url(images/bg2.jpg), url(images/bg3.jpg);
+            width: 0px;
+            height: 0px;
+            display: inline;
+        }*/
+        
+        .bg {
+            width: 100%;
+            height: 100%;
+            background: url(../images/bg0.jpg) no-repeat scroll center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-size: 100% 100%;
+        }
+        /*顶部图标*/
+        
+        .topMenu {
+            width: 118;
+            height: 27px;
+            position: absolute;
+            top: 3px;
+            left: 50%;
+            line-height: 27px;
+            transform: translateX(-50%);
+        }
+        
+        .topMenu .topNav li {
+            float: left;
+            perspective: 100px;
+            -webkit-perspective: 100px;
+            -moz-perspective: 100px;
+            -o-perspective: 100px;
+        }
+        
+        .topMenu .topNav a {
+            float: left;
+            position: relative;
+            font: 14px/22px 'ËÎÌå';
+            color: white;
+            font-weight: 900;
+            margin-left: 5px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transition: .5s;
+            -webkit-transition: .5s;
+            -moz-transition: .5s;
+            -o-transition: .5s;
+            transform-origin: center center -11px;
+            -webkit-transform-origin: center center -11px;
+            -moz-transform-origin: center center -11px;
+            -o-transform-origin: center center -11px;
+        }
+        
+        .topMenu .topNav span {
+            float: left;
+            width: 27px;
+            text-align: center;
+        }
+        
+        .topMenu .topNav span:nth-of-type(1) {
+            position: absolute;
+            left: 0;
+            top: -22px;
+            background: gray url(../images/btn.png) no-repeat scroll center center;
+            transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+            -moz-transform-origin: bottom;
+            -o-transform-origin: bottom;
+            transform: rotateX(90deg);
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+        }
+        
+        .topMenu .topNav a:hover {
+            transform: rotateX(-90deg);
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+        }
+        /*.shortCuts {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        
+        .shortCut {
+            width: 86px;
+            cursor: pointer;
+            flex: 0 0 14.28%;
+        }*/
+        
+        .desk {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .shortCuts {
+            text-align: center;
+        }
+        
+        .shortCut {
+            position: absolute;
+            height: 85px;
+            width: 85px;
+        }
+        
+        .shortCut:hover {
+            background-color: #cccccc;
+            opacity: 0.5;
+        }
+        /*.shortCut:nth-of-type(odd) {
+            background-color: yellow;
+        }
+        
+        .shortCut:nth-of-type(even) {
+            background-color: greenyellow;
+        }*/
+        
+        .shortCutIcon {
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+        }
+        
+        .shortCutTitle {
+            font-size: 10px;
+            color: white;
+        }
+        /*底部区域*/
+        
+        .bottom {
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .start {
+            float: left;
+            width: 60px;
+            height: 100%;
+            background-color: pink;
+        }
+        
+        .Img {
+            height: 30px;
+            width: 30px;
+            margin: 10px 15px;
+        }
+        
+        .content {
+            width: 250px;
+            height: 100%;
+            background-color: #4169E1;
+        }
+        
+        .datetime {
+            width: 120px;
+            line-height: 40px;
+            color: #ffffff;
+            float: right;
+            text-align: center;
+            margin-top: 5px;
+        }

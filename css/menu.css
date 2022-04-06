@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.menu {
+    background-color: pink;
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    left: 0;
+    bottom: 50px;
+    display: flex;
+}
+
+.menuList {
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 10px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 4px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.ListContent {
+    height: 100%;
+    width: 100%;
+}
+
+.ListItem {
+    box-sizing: border-box;
+    background-color: #DCDCDC;
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+    line-height: 35px;
+}
+
+.ListItem:hover {
+    background-color: white;
+}
+
+.left {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.LittleListItem {
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    height: 45px;
+    width: 100%;
+    padding: 5px;
+}
+
+.menuGrid {
+    box-sizing: border-box;
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.GridContent {
+    background-color: #F0F0F0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.GridTitle {
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.GridItem {
+    width: calc(100% - 10px);
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(5, 20%);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.item-1 {
+    background-color: #C1FFE4;
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.item-2 {
+    background-color: #DDDDFF;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.item-3 {
+    background-color: #00FFFF;
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.item-4 {
+    background-color: #FFC1E0;
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.item-5 {
+    background-color: #1AFD9C;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.item-6 {
+    background-color: #66B3FF;
+    grid-area: 4 / 1 / 6 / 3;
+}
+
+.item-7 {
+    background-color: #FF9797;
+    grid-area: 4 / 3 / 6 / 4;
+}
+
+.secondItem {
+    position: relative;
+    z-index: 0;
+    top: 0;
+}
